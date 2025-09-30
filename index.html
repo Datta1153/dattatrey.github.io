@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dattatrey Vaddankeri | Portfolio</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css" />
+  
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <nav>
+      <div class="logo">PORTFOLIO</div>
+      <div class="nav-links">
+        <button class="active">HOME</button>
+        <button>ABOUT</button>
+        <button>PROJECTS</button>
+        <button>CONTACT</button>
+      </div>
+      <button class="toggle-btn" id="darkModeToggle">🌙 Dark Mode</button>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Hi, I'm <span>Dattatrey Vaddankeri</span></h1>
+      <h3>Front End Developer</h3>
+      <p>
+        I'm a passionate Front End Developer with expertise in creating 
+        responsive and user-friendly web applications. Skilled in 
+        HTML, CSS, and JavaScript with growing knowledge of React and modern frameworks.
+      </p>
+      <button class="btn">View Projects</button>
+      <button class="btn">Download CV</button>
+      <div class="socials">
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-linkedin"></i>
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-twitter"></i>
+      </div>
+    </div>
+    <img src="./img43.jpg" alt="Portfolio Photo">
+  </section>
+
+  <!-- EDUCATION -->
+  <section>
+    <h2>Education</h2>
+    <div class="card">
+      <h3>SSLC</h3>
+      <h5>2017-2018</h5>
+      <h5>78% - Chandrakanth Patil Public School</h5>
+    </div>
+    <div class="card">
+      <h3>PUC</h3>
+      <h5>2018-2020</h5>
+      <h5>73% - Sarvajna PU College</h5>
+    </div>
+    <div class="card">
+      <h3>B.Tech (CSE)</h3>
+      <h5>2020-2024</h5>
+      <h5>78% - Sharnbasva University</h5>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section>
+    <h2>Projects</h2>
+    <div class="card">
+      <h3>Amazon Clone Website</h3>
+      <h5>HTML, CSS, MongoDB, React JS</h5>
+    </div>
+    <div class="card">
+      <h3>Symptam Application</h3>
+      <h5>HTML, CSS, React JS</h5>
+    </div>
+    <div class="card">
+      <h3>Food Delivery Website</h3>
+      <h5>HTML, CSS</h5>
+    </div>
+  </section>
+
+  <!-- CO-CURRICULAR -->
+  <section>
+    <h2>Co-Curricular Achievements</h2>
+    <div class="card">
+      <h3>National Level Abacus Champion</h3>
+      <h5>Held at Pune</h5>
+    </div>
+    <div class="card">
+      <h3>National Level Karate Referee</h3>
+      <h5>Held at Bangalore</h5>
+    </div>
+    <div class="card">
+      <h3>National Cadet Corps</h3>
+      <h5>Conducted under Ministry of Defence</h5>
+    </div>
+    <div class="card">
+      <h3>State Level Karate Champion</h3>
+      <h5>Held at Gulbarga</h5>
+    </div>
+    <div class="card">
+      <h3>State Level Firing</h3>
+      <h5>Held at Bagalkot</h5>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>&copy; 2025 Dattatrey Vaddankeri. All Rights Reserved.</p>
+  </footer>
+
+  <!-- DARK MODE SCRIPT -->
+  <script>
+    const toggleBtn = document.getElementById("darkModeToggle");
+    const body = document.body;
+
+    toggleBtn.addEventListener("click", () => {
+      body.classList.toggle("dark");
+      if (body.classList.contains("dark")) {
+        toggleBtn.textContent = "☀️ Light Mode";
+      } else {
+        toggleBtn.textContent = "🌙 Dark Mode";
+      }
+    });
+  </script>
+
+</body>
+</html>
